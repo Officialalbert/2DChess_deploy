@@ -1,0 +1,71 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #1e1e2e;
+  color: #eee;
+  text-align: center;
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+#map-canvas {
+  background: #2a2a3d;
+  border: 2px solid #555;
+}
+
+input {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: none;
+  margin-right: 6px;
+}
+
+button {
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: none;
+  background: #6c5ce7;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #5849c4;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(8, 44px);
+  grid-template-rows: repeat(8, 44px);
+  width: fit-content;
+  margin: 16px auto;
+  border: 2px solid #444;
+}
+
+.square {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+.light {
+  background: #eeeed2;
+  color: #111;
+}
+
+.dark {
+  background: #769656;
+  color: #111;
+}
+
+#analysis {
+  max-height: 160px;
+  overflow-y: auto;
+  font-size: 13px;
+  color: #ccc;
+}

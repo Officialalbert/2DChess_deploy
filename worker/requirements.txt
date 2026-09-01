@@ -1,0 +1,5 @@
+celery==5.4.0
+redis==5.0.8
+python-chess==1.999
+sqlalchemy==2.0.35
+psycopg2-binary==2.9.9

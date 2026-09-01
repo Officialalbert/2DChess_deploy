@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chess Map</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🗺️ Chess Map</h1>
+
+  <div id="login-screen">
+    <input id="username-input" placeholder="Твоё имя" />
+    <button id="login-btn">Войти на карту</button>
+  </div>
+
+  <div id="map-screen" class="hidden">
+    <p>Двигайся стрелками (WASD/стрелки клавиатуры). Дойди до 🏰, чтобы начать партию.</p>
+    <canvas id="map-canvas" width="420" height="420"></canvas>
+  </div>
+
+  <div id="arena-screen" class="hidden">
+    <h2>♟️ Шахматная арена</h2>
+    <p>Ход белых начинается. Вводи ходы в формате SAN (например: e4, Nf3, O-O).</p>
+    <div id="board"></div>
+    <div id="move-controls">
+      <input id="move-input" placeholder="Например: e4" />
+      <button id="move-btn">Сходить</button>
+    </div>
+    <p id="game-status"></p>
+    <div id="analysis"></div>
+    <button id="leave-arena-btn">Вернуться на карту</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
