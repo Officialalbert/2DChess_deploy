@@ -1,0 +1,9 @@
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+# E, F — стандартные ошибки (синтаксис, неиспользуемые переменные, недостижимый код и т.п.)
+# Специально НЕ включаю B (bugbear) и UP (pyupgrade) — они бы ругались
+# на нормальные FastAPI-паттерны (Depends(...) в default) и синтаксис старых версий Python
+select = ["E", "F"]
