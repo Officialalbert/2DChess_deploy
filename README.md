@@ -9,8 +9,6 @@
 воркер + reverse proxy) и научиться правильно его оркестрировать, а не
 написать сложную бизнес-логику.
 
-![status]<img width="1012" height="224" alt="image" src="https://github.com/user-attachments/assets/f1ddda45-9f63-4c49-99a3-e0d6f1cb67a2" />
-
 ---
 
 ## Архитектура
